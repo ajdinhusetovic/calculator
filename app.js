@@ -1,35 +1,21 @@
+
 const buttons = document.querySelectorAll('.btn');
-const input = document.querySelector('.inpt');
 const equal = document.querySelector('#equal');
-const clear = document.querySelector('.clr');
+const clear = document.querySelector('.clear');
+const operations = document.querySelectorAll('[data-operation]');
+let previousOperandTextElement = document.querySelector('.previous-operand');
+let currentOperandTextElement = document.querySelector('.current-operand');
 
-const clearInputField = () => {
-    input.value = " ";
-    console.log(input.value)
-}
-
-const timesTwo = (number) => {
-    input.value = number*2;
-    console.log(input.value)
-}
 
 buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-        input.value = btn.dataset.num
-      
+        displayNumberInOutput(btn.textContent);
     })
 })
 
 
-equal.addEventListener('click', (e)=>{
-    e.preventDefault();
-    timesTwo(input.value)
-})
 
-clear.addEventListener('click', (e) => {
-    e.preventDefault();
-    clearInputField();
-});
+
 
 
 

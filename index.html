@@ -10,7 +10,8 @@
 <body>
     <div class="calculator">
         <div class="output">
-            <input type="text" class="inpt">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
         </div>
         <div class="buttons">
             <button id="equal">=</button>
@@ -24,13 +25,13 @@
             <button class="btn" data-num="2">2</button>
             <button class="btn" data-num="1">1</button>
             <button class="btn" data-num="0">0</button>
-            <button class="btn" data-operation="+">+</button>
-            <button class="btn" data-operation="-">-</button>
-            <button class="btn" data-operation="*">*</button>
-            <button class="btn" data-operation="/">/</button>
-            <button class="btn clr">CLR</button>
+            <button class="operat" data-operation="-">-</button>
+            <button class="operat" data-operation="*">*</button>
+            <button class="operat" data-operation="+">+</button>
+            <button class="operat" data-operation="/">/</button>
+            <button class="clear">CLR</button>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

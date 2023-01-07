@@ -22,6 +22,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
+}
+
+.output{
+    background-color: white;
+    height: 100px;
+    width: 100%;
 }
 
 .buttons {
@@ -35,7 +42,3 @@ button {
     padding: 10px;
 }
 
-input {
-    text-align: right;
-    padding: 5px;
-}
